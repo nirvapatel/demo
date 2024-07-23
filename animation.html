@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .n{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: rgb(245, 251, 245);
+            animation-name: box;
+            animation-duration: 2s;
+        }
+        /* .i{
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid rgb(255, 0, 149);
+      animation-duration: 2s;
+      animation-name: box;
+    } */
+  
+        
+        @keyframes box  {
+            from{
+                border-radius: 15px;
+                background-color:rgb(248, 114, 248);
+            }
+            to{
+                border-radius: 50px;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="n">
+        <!-- <div class="i"></div> -->
+    </div>
+</body>
+
+</html>

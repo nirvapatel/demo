@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .main{
+            position: relative;
+        }
+        .child-1{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color:plum ;
+            border-radius: 50%;
+            z-index: -1;
+            top: 10%;
+            left: 10%;
+            border: 5px solid rgb(243, 85, 243);
+        }
+        .child-2{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: palegoldenrod;
+            border-radius: 50%;
+            z-index: 0;
+            top: 20%;
+            left: 20%;
+            border: 5px solid rgb(245, 235, 125);
+        }
+        .child-3{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: palegreen;
+            border-radius: 50%;
+            z-index: 1;
+            top: 30%;
+            left: 30%;
+            border: 5px solid rgb(113, 250, 113);
+        }
+        .child-4{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: powderblue;
+            border-radius: 50%;
+            z-index: 2;
+            top: 40%;
+            left: 40%;
+            border: 5px solid rgb(121, 224, 237);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+        <div class="child-3"></div>
+        <div class="child-4"></div>
+    </div>
+</body>
+</html>

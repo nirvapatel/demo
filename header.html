@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .header-main {
+            display: block;
+        }
+        .container{
+            display: block;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .header-main .main-inner{
+            display: block;
+        }
+    
+        .header-main .main-inner .header-bottom{
+            display: block;
+            background-color: black;
+            color: white;
+        }
+        .header-main .main-inner .header-bottom .bottom-inner{
+            display: flex;
+        }
+        .header-main .main-inner .header-bottom .bottom-inner li{
+            display: block;
+        }
+        .header-main .main-inner .header-bottom .bottom-inner>li>a{
+            display: block;
+            padding: 20px 22px;
+            font-size: 20px;
+            color: white;
+        }
+        .header-main .main-inner .header-bottom .bottom-inner>li>a:hover{
+            color: black;
+            background-color: white;
+            box-shadow: 5px 5px 10px black inset;
+            transition-delay: 0.5s;
+        }
+        .header-main .main-inner .header-bottom li{
+            display: block;
+            position: relative;
+        }
+        .header-main .main-inner .header-bottom .bottom-inner .sub-menu>li>a{
+            display: block;
+            padding: 18px 20px;
+            font-size: 18px;
+            color: black;
+            font-weight: 500;
+        }
+        .header-main .main-inner .header-bottom li a:hover{
+            color: green;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .header-main .main-inner .header-bottom li .sub-menu{
+            display: none;
+            position: absolute;
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+           min-width: 120px;
+           left: 0;
+        }
+        .header-main .main-inner .header-bottom li:hover .sub-menu{
+            display: block;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-main">
+        <div class="main-inner">
+            <!-- <div class="header-top"></div>
+            <div class="header-middel"></div> -->
+            <div class="header-bottom">
+                <div class="container">
+                    <ul class="bottom-inner">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Product</a>
+                           <ul class="sub-menu">
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3</a></li>
+                            <li><a href="#">Product 4</a></li>
+                           </ul></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

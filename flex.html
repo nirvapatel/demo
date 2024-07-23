@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .main{
+           background-color: plum;
+           display: flex;
+           flex-flow: row wrap;
+           align-content: stretch;
+           height: 250px;
+           justify-content: space-around;
+        }
+        .child{
+            height: 150px;
+            width: 150px;
+            background-color: paleturquoise;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

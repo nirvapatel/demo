@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            display: block;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .main-header {
+            display: block;
+            clear: both;
+            background-color: black;
+        }
+
+        .main-header .header-inner {
+            display: flex;
+        }
+
+        .main-header .header-inner li {
+            display: block;
+            position: relative;
+        }
+
+        .main-header .header-inner>li>a {
+            display: block;
+            font-size: 20px;
+            color: white;
+            font-weight: 500;
+            padding: 20px;
+        }
+
+        .main-header .header-inner>li>a:hover {
+            background-color: rgb(249, 245, 236);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+            color: #4d4c4c;
+        }
+
+        .main-header .header-inner li .sub-menu {
+            display: none;
+            position: absolute;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            top: 100%;
+            left: 0px;
+        }
+
+        .main-header .header-inner li .sub-menu li {
+            display: block;
+            width: 140px;
+            text-align: center;
+            position: relative;
+        }
+
+        .main-header .header-inner li .sub-menu>li>a {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 20px;
+            color: rgb(69, 68, 68);
+        }
+
+        .main-header .header-inner li .sub-menu>li>a:hover {
+            background-color: aliceblue;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+
+        .main-header .header-inner li:hover .sub-menu {
+            display: block;
+        }
+
+        .main-header .header-inner li .sub-menu li .semi-sub-menu {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 100%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .main-header .header-inner li .sub-menu li .semi-sub-menu li {
+            display: block;
+            width: 170px;
+        }
+
+        .main-header .header-inner li .sub-menu li .semi-sub-menu>li>a {
+            display: block;
+            font-size: 17px;
+            font-weight: 400;
+            color: rgb(101, 101, 101);
+            padding: 20px 22px;
+        }
+
+        .main-header .header-inner li .sub-menu li .semi-sub-menu>li>a:hover {
+            background-color: rgb(219, 240, 247);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;        }
+
+        .main-header .header-inner li .sub-menu li:hover .semi-sub-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="container">
+            <ul class="header-inner">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                        <li><a href="#">Product 3</a>
+                            <ul class="semi-sub-menu">
+                                <li><a href="#">Semi Product 1</a></li>
+                                <li><a href="#">Semi Product 2</a></li>
+                                <li><a href="#">Semi Product 3</a></li>
+                                <li><a href="#">Semi Product 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Product 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

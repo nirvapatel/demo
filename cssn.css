@@ -1,0 +1,21 @@
+.a{
+    text-align:left;
+    text-decoration: overline;
+    transform:uppercase;
+}
+
+.b{
+    text-align:center;
+    text-decoration: line-through;
+    transform: lowercase;
+}
+
+.c{
+    text-align: right;
+    text-decoration:underline;
+}
+
+.d{
+    text-align: justify;
+    transform: capitalize;
+}
